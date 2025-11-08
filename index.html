@@ -32,13 +32,21 @@
 
 <!-- Stil -->
 <style>
-  /* Listeyi sıfırla ve ortala */
   .buton-kapsayici {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center; /* Butonu ortalar */
-  }
+    
+    /* Ortalamayı flex ile yap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buton-kapsayici li {
+    display: block; /* Flex ile artık inline-block gerek yok */
+}
+
 
   .buton-kapsayici li {
     display: inline-block;
@@ -80,6 +88,7 @@
 	</body>
 
 </html>
+
 
 
 
