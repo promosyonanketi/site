@@ -33,17 +33,18 @@
     display: inline-block;
     background-color: #28a745; /* Yeşil renk */
     color: white;
-    padding: 12px 24px;
-    font-size: 18px;
+    padding: 16px 60px; /* Dikey ve yatay boşluk -> geniş dikdörtgen */
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    border: none; /* Çerçeve yok */
-    border-radius: 0; /* Köşeler yuvarlak değil, dikdörtgen */
-    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 10px; /* Hafif kavisli köşeler */
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
 
   .indir-buton:hover {
     background-color: #218838; /* Üzerine gelince koyu yeşil */
+    transform: scale(1.03); /* Hafif büyüme efekti */
   }
 </style>
 						</nav>
@@ -64,6 +65,7 @@
 	</body>
 
 </html>
+
 
 
 
