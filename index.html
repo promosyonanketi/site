@@ -27,10 +27,8 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-		<div class="hero-panel">
-  <h1>2025-2027 Banka Promosyonu</h1>
-  <p>Promosyon tekliflerini görüntüleyebilir &bull; Anket ile fikrinizi belirtin</p>
-</div>
+		<div id="wrapper">
+			<div id="bg"></div>
 			<div id="overlay"></div>
 			<div id="main">
 
@@ -44,7 +42,10 @@
     text-align: center;
     letter-spacing: 0.8px;
     margin-bottom: 8px;
-    text-shadow: 0px 0px 1px rgba(0,0,0,0.3);">2025-2027 Banka Promosyonu</h1>				
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+">
+2025-2027 Banka Promosyonu
+</h1>				
 <p style="
     font-family: 'Segoe UI', Arial, sans-serif;
     color: #16315c; /* Lacivertin bir ton açığı */
@@ -54,8 +55,11 @@
     letter-spacing: 0.5px;
     margin-top: 4px;
     border-top: 1px solid rgba(0,0,0,0.15);
-    padding-top: 8px;">Promosyon tekliflerini görüntüleyebilir • Anket ile fikrinizi belirtebilirsiniz</p>
-<nav>
+    padding-top: 8px;
+">
+Promosyon tekliflerini görüntüleyebilir • Anket ile fikrinizi belirtebilirsiniz
+</p>
+						<nav>
 							<!-- Buton -->
 <ul class="buton-kapsayici">
   <li>
@@ -65,30 +69,38 @@
 
 <!-- Stil -->
 <style>
-/* Hafif pano efekti */
-.hero-panel {
-  display: inline-block;
-  padding: 15px 25px;
-  background-color: rgba(255,255,255,0.95);
-  border-radius: 6px;
-  text-align: center;
-  margin-bottom: 25px;
+.buton-kapsayici {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* üst boşluk */
 }
 
-/* Başlık */
-.hero-panel h1 {
-  color: #1C1C1C;
-  font-size: 32px;       /* Biraz daha büyük */
-  font-weight: bold;     /* Bold yapıldı */
-  margin-bottom: 10px;
+.buton-kapsayici li {
+    display: block;
 }
 
-/* Açıklama paragrafı */
-.hero-panel p {
-  color: #2C2C2C;
-  font-size: 18px;       /* Biraz daha büyük */
-  font-weight: bold;     /* Bold yapıldı */
-  margin-top: 0;
+.indir-buton {
+    display: inline-block;
+    background-color: #2C3E50; /* Premium koyu mavi / finansal ton */
+    color: #F1C40F; /* Altın sarısı yazı — premium hissi */
+    padding: 12px 80px; /* Yatay geniş, dikey minimal */
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.indir-buton:hover {
+    background-color: #34495E; /* Hover koyulaşması */
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 </style>
 
@@ -100,7 +112,6 @@
 						<span class="copyright">&copy; Untitled. Design: Onur Asaf KÖKSAL.</span>
 					</footer>
 
-
 			</div>
 		</div>
 		<script>
@@ -111,9 +122,6 @@
 	</body>
 
 </html>
-
-
-
 
 
 
