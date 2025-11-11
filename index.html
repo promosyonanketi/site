@@ -76,30 +76,30 @@ Promosyon tekliflerini görüntüleyebilir • Anket ile fikrinizi belirtebilirs
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px; /* Üst boşluk */
 }
 
 .buton-kapsayici li {
     display: block;
 }
 
-/* Yeni Buton */
 .indir-buton {
     display: inline-block;
-    background-color: #0078ff; /* Canlı banka mavi */
+    background-color: #4CAF50; /* Banka/para temalı yeşil */
     color: white;
-    padding: 4px 120px; /* Burada genişlik artırıldı, yükseklik azaltıldı */
-    font-size: 20px;
-    font-weight: bold;
+    padding: 8px 40px; /* Daha minimal boyut */
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
-    border-radius: 6px;
-    transition: 0.25s ease;
     border: none;
-    letter-spacing: 0.5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .indir-buton:hover {
-    background-color: #005fcc; /* Hover koyu mavi */
-    transform: scale(1.02);
+    background-color: #43a047; /* Hover efekt */
+    transform: scale(1.05);
 }
 </style>
 
@@ -122,6 +122,7 @@ Promosyon tekliflerini görüntüleyebilir • Anket ile fikrinizi belirtebilirs
 	</body>
 
 </html>
+
 
 
 
