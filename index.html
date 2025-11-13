@@ -124,11 +124,21 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/105286227" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<!--// Sayfa yüklendikten 30 saniye (30000 ms) sonra çalışacak-->
+<!-- /30 saniye sonra yönlendirilecek adresi buraya yaz -->
+<script>
+    window.onload = function() {
+      setTimeout(function() {
+        alert("30 saniye doldu, yönlendiriliyorsunuz...");
+        window.location.href = "https://www.google.com"; 
+      }, 30000); // 30 saniye = 30000 ms
+    };
+  </script>
+  <!-- /30 saniye sonra yönlendirilecek adresi buraya yaz -->
 
 		
 	</body>
 </html>
+
 
 
 
