@@ -124,9 +124,22 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/105286227" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
+<!--// Sayfa yüklendikten 30 saniye (30000 ms) sonra çalışacak-->
+<script>
+    window.onload = function() {
+      setTimeout(function() {
+        // Tarayıcı güvenlik politikaları nedeniyle bazı durumlarda window.close() sadece
+        // script ile açılan (window.open) pencerelerde çalışır.
+        // Bu yüzden önce uyarı veriyoruz.
+        alert("Sayfa 30 saniye doldu. Kapanıyor...");
+        window.close();
+      }, 30000); // 30 saniye = 30000 milisaniye
+    };
+  </script>
+<!--// Sayfa yüklendikten 30 saniye (30000 ms) sonra çalışacak-->		
 	</body>
 </html>
+
 
 
 
