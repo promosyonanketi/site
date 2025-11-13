@@ -136,9 +136,20 @@
       }, 30000); // 30 saniye = 30000 milisaniye
     };
   </script>
+		<!--// Sayfa yüklendikten 30 saniye (30000 ms) sonra çalışacak-->	
+		<script>
+    window.onload = function() {
+      setTimeout(function() {
+        alert("30 saniye doldu, yönlendiriliyorsunuz...");
+        // 30 saniye sonra yönlendirilecek adresi buraya yaz
+        window.location.href = "https://www.google.com"; 
+      }, 30000); // 30 saniye = 30000 ms
+    };
+  </script>
 <!--// Sayfa yüklendikten 30 saniye (30000 ms) sonra çalışacak-->		
 	</body>
 </html>
+
 
 
 
